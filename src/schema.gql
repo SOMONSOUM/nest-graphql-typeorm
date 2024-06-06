@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TokenType {
+  id: Float
+  jwt: String
+}
+
+type Query {
+  userData: String!
+}
+
+type Mutation {
+  login(loginPayloadDTO: LoginPayloadDTO!): TokenType!
+}
+
+input LoginPayloadDTO {
+  email: String!
+  password: String!
+}

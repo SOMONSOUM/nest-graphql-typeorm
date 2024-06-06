@@ -1,0 +1,634 @@
+[2024-04-25T16:44:09.985Z][QUERY]: SELECT * FROM current_schema()
+[2024-04-25T16:44:10.034Z][QUERY]: CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+[2024-04-25T16:44:10.039Z][QUERY]: SELECT version();
+[2024-04-25T16:44:10.043Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = 'public' AND "table_name" = 'migrations'
+[2024-04-25T16:44:10.062Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY "id" DESC
+[2024-05-31T09:14:52.671Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:14:52.696Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:14:52.702Z][QUERY]: CREATE TABLE `migrations` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2024-05-31T09:14:52.726Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:15:22.138Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:15:22.168Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:15:22.174Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:16:10.286Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:16:10.310Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:16:10.315Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:16:16.880Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:16:16.911Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:16:16.918Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:19:30.328Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:19:30.355Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:19:30.361Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:20:43.342Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:20:43.374Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:20:43.381Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:20:47.302Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:20:47.326Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:20:47.347Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:20:49.295Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:20:49.321Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:20:49.326Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:21:00.381Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:21:00.409Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:21:00.415Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:21:05.676Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:21:05.710Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:21:05.717Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:21:12.452Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:21:12.486Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:21:12.492Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:21:31.288Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:21:31.319Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:21:31.325Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:22:20.317Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:22:20.320Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:22:20.320Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:32:07.865Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:32:07.891Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:32:07.897Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:33:32.998Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:33.002Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:33.002Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:33:33.539Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:33.540Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:33.540Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:33:34.014Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:34.016Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:34.016Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:33:34.224Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:34.225Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:34.225Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:33:34.383Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:34.385Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:33:34.385Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:35:14.001Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:35:14.034Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:35:14.040Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:35:20.381Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:35:20.412Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:35:20.418Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:35:54.390Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:35:54.415Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:35:54.421Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:36:09.773Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:36:09.803Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:36:09.810Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:36:14.495Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:14.498Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:14.498Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:36:16.920Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:16.921Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:16.921Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:36:17.628Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:17.629Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:17.629Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:36:18.421Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:18.424Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:36:18.424Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:39:59.021Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:39:59.051Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:39:59.059Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:40:58.742Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:40:58.774Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:40:58.782Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:41:05.232Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:41:05.263Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:41:05.270Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:41:36.342Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:41:36.370Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:41:36.375Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:41:45.177Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:41:45.203Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:41:45.209Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:41:51.463Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:41:51.489Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:41:51.495Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:42:13.099Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:42:13.131Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:42:13.139Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:42:18.798Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:42:18.831Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:42:18.837Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:10.842Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:10.868Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:10.874Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:22.255Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:22.282Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:22.288Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:32.560Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:32.585Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:32.591Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:36.335Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:36.368Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:36.373Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:38.165Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:38.191Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:38.198Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:40.277Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:40.309Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:40.315Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:42.271Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:42.296Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:42.303Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:44.337Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:44.370Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:44.376Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:43:47.990Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:43:48.014Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:43:48.019Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:44:17.769Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:44:17.808Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:44:17.814Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:46:51.978Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:46:52.004Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:46:52.009Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:47:24.581Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:24.586Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:24.586Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:25.483Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:25.485Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:25.485Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:26.157Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.160Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.160Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:26.465Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.466Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.466Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:26.624Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.625Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.625Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:26.831Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.832Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.832Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:26.981Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.983Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:26.983Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:47:27.244Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:27.252Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:47:27.252Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:48:00.458Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:48:00.486Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:48:00.491Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:48:09.868Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:09.874Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:09.874Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:48:10.891Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:10.892Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:10.892Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:48:11.553Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:11.554Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:11.554Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:48:12.103Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:12.106Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:12.106Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:48:12.421Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:12.422Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:48:12.422Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:49:16.799Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:49:16.828Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:49:16.834Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:49:21.454Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:21.459Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:21.459Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:49:23.053Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:23.054Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:23.054Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:49:23.572Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:23.574Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:23.574Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:49:24.097Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:24.099Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:24.099Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:49:24.677Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:24.678Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:24.678Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:49:25.233Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:25.235Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:49:25.235Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:50:34.653Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:50:34.679Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:50:34.685Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:50:48.847Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:50:48.877Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:50:48.882Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:51:07.206Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:51:07.230Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:51:07.254Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:51:39.850Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:51:39.874Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:51:39.880Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:52:06.700Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:52:06.725Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:52:06.730Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:52:11.591Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:52:11.614Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:52:11.620Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:52:28.639Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:52:28.669Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:52:28.674Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:52:34.615Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:52:34.647Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:52:34.653Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:52:53.380Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:52:53.406Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:52:53.411Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:52:56.747Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:52:56.777Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:52:56.782Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:04.322Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:04.355Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:04.363Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:10.269Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:10.295Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:10.301Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:15.504Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:15.538Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:15.543Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:19.754Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:19.785Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:19.790Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:29.771Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:29.802Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:29.808Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:37.504Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:37.541Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:37.546Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:41.104Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:41.130Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:41.135Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:52.901Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:52.927Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:52.932Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:53:54.990Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:53:55.040Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:53:55.046Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:54:02.438Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:54:02.465Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:54:02.471Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:54:11.288Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:54:11.314Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:54:11.320Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:54:25.648Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:54:25.674Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:54:25.679Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:54:38.779Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:54:38.825Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:54:38.831Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:55:17.298Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:55:17.325Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:55:17.331Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:55:33.103Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:55:33.130Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:55:33.136Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:55:59.371Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:55:59.404Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:55:59.410Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:56:05.119Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:05.121Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:05.121Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:56:05.890Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:05.891Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:05.891Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:56:06.416Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:06.417Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:06.417Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:56:07.394Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:07.395Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:07.395Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:56:07.969Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:07.971Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-05-31T09:56:07.971Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-05-31T09:57:18.872Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:57:18.908Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:57:18.915Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T09:57:21.392Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T09:57:21.423Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T09:57:21.428Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:03:05.351Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:03:05.382Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:03:05.389Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:03:17.078Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:03:17.116Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:03:17.123Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:04:32.463Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:04:32.492Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:04:32.499Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:01.385Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:01.410Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:01.416Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:08.785Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:08.812Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:08.818Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:15.532Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:15.557Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:15.564Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:20.631Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:20.657Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:20.665Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:26.284Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:26.315Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:26.321Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:31.825Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:31.853Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:31.858Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:38.064Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:38.091Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:38.097Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:45.096Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:45.129Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:45.135Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:50.849Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:50.890Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:50.896Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:05:56.443Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:05:56.474Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:05:56.480Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:06:35.432Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:06:35.458Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:06:35.464Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:06:48.372Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:06:48.398Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:06:48.403Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:09:37.936Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:09:37.963Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:09:37.968Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:09:54.235Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:09:54.260Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:09:54.266Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-05-31T10:11:14.672Z][QUERY]: SELECT VERSION() AS `version`
+[2024-05-31T10:11:14.750Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-05-31T10:11:14.757Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:20:49.550Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:20:49.587Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:20:49.622Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:21:20.844Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:21:20.871Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:21:20.877Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:21:27.958Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:21:27.982Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:21:27.987Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:21:29.900Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:21:29.932Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:21:29.937Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:21:43.861Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:21:43.913Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:21:43.919Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:21:47.379Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:21:47.406Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:21:47.411Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:21:49.573Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:21:49.605Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:21:49.611Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:24:39.567Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-06-06T10:24:39.575Z][FAILED QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`otp` AS `User_otp`, `User`.`otpExpiry` AS `User_otpExpiry`, `User`.`password` AS `User_password`, `User`.`invite` AS `User_invite`, `User`.`status` AS `User_status`, `User`.`role` AS `User_role`, `User`.`walletAddress` AS `User_walletAddress` FROM `users` `User` WHERE ((`User`.`email` = ?) AND (`User`.`password` = ?)) LIMIT 1 -- PARAMETERS: ["sok.dara@moc.gov.kh","Moc@168"]
+[2024-06-06T10:24:39.575Z][QUERY ERROR]: Error: Table 'tt_test.users' doesn't exist
+[2024-06-06T10:25:45.485Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:25:46.842Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:25:46.848Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:25:46.849Z]No migrations are pending
+[2024-06-06T10:34:36.118Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:34:36.142Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:34:36.148Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:34:36.149Z][QUERY]: START TRANSACTION
+[2024-06-06T10:34:36.151Z][QUERY]: SELECT DATABASE() AS `db_name`
+[2024-06-06T10:34:36.153Z][QUERY]: SELECT `TABLE_SCHEMA`, `TABLE_NAME`, `TABLE_COMMENT` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'users'
+[2024-06-06T10:34:36.156Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'typeorm_metadata'
+[2024-06-06T10:34:36.159Z][QUERY]: CREATE TABLE `users` (`id` int NOT NULL AUTO_INCREMENT, `name` varchar(255) NULL, `email` varchar(255) NOT NULL, `otp` varchar(255) NULL, `otpExpiry` datetime NULL, `password` varchar(255) NULL, `invite` varchar(255) NULL, `status` enum ('pending', 'registered') NOT NULL DEFAULT 'pending', `role` enum ('admin', 'partner', 'user') NOT NULL, `walletAddress` varchar(255) NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2024-06-06T10:34:36.185Z][QUERY]: COMMIT
+[2024-06-06T10:34:56.188Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:34:56.221Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:34:56.227Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:46:02.359Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:46:03.753Z][QUERY]: SELECT DATABASE() AS `db_name`
+[2024-06-06T10:46:03.754Z][QUERY]: SELECT `TABLE_SCHEMA`, `TABLE_NAME`, `TABLE_COMMENT` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'users'
+[2024-06-06T10:46:03.756Z][QUERY]: 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+                
+[2024-06-06T10:46:03.757Z][QUERY]: SELECT * FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'users'
+            ) `kcu` WHERE `CONSTRAINT_NAME` = 'PRIMARY'
+[2024-06-06T10:46:03.757Z][QUERY]: 
+            SELECT
+                `SCHEMA_NAME`,
+                `DEFAULT_CHARACTER_SET_NAME` as `CHARSET`,
+                `DEFAULT_COLLATION_NAME` AS `COLLATION`
+            FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+            
+[2024-06-06T10:46:03.757Z][QUERY]: 
+            SELECT
+                `s`.*
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+            ) `s`
+            LEFT JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+            ) `rc`
+                ON
+                    `s`.`INDEX_NAME` = `rc`.`CONSTRAINT_NAME`
+                    AND
+                    `s`.`TABLE_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA`
+            WHERE
+                `s`.`INDEX_NAME` != 'PRIMARY'
+                AND
+                `rc`.`CONSTRAINT_NAME` IS NULL
+            
+[2024-06-06T10:46:03.757Z][QUERY]: 
+            SELECT
+                `kcu`.`TABLE_SCHEMA`,
+                `kcu`.`TABLE_NAME`,
+                `kcu`.`CONSTRAINT_NAME`,
+                `kcu`.`COLUMN_NAME`,
+                `kcu`.`REFERENCED_TABLE_SCHEMA`,
+                `kcu`.`REFERENCED_TABLE_NAME`,
+                `kcu`.`REFERENCED_COLUMN_NAME`,
+                `rc`.`DELETE_RULE` `ON_DELETE`,
+                `rc`.`UPDATE_RULE` `ON_UPDATE`
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'users'
+            ) `kcu`
+            INNER JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+            ) `rc`
+                ON
+                    `rc`.`CONSTRAINT_SCHEMA` = `kcu`.`CONSTRAINT_SCHEMA`
+                    AND
+                    `rc`.`TABLE_NAME` = `kcu`.`TABLE_NAME`
+                    AND
+                    `rc`.`CONSTRAINT_NAME` = `kcu`.`CONSTRAINT_NAME`
+            
+[2024-06-06T10:46:03.767Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:46:03.770Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'typeorm_metadata'
+[2024-06-06T10:46:42.042Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:46:42.069Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:46:42.075Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:46:51.345Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:46:51.371Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:46:51.377Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:46:58.373Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:46:58.401Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:46:58.407Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:00.962Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:00.986Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:47:00.991Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:04.634Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:04.668Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:47:04.673Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:10.699Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:10.728Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:47:10.733Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:14.193Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:17.249Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:19.883Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:19.911Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:47:19.916Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:24.684Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:25.624Z][QUERY]: SELECT DATABASE() AS `db_name`
+[2024-06-06T10:47:25.628Z][QUERY]: SELECT `TABLE_SCHEMA`, `TABLE_NAME`, `TABLE_COMMENT` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'users'
+[2024-06-06T10:47:25.630Z][QUERY]: 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+                
+[2024-06-06T10:47:25.631Z][QUERY]: SELECT * FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'users'
+            ) `kcu` WHERE `CONSTRAINT_NAME` = 'PRIMARY'
+[2024-06-06T10:47:25.631Z][QUERY]: 
+            SELECT
+                `SCHEMA_NAME`,
+                `DEFAULT_CHARACTER_SET_NAME` as `CHARSET`,
+                `DEFAULT_COLLATION_NAME` AS `COLLATION`
+            FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+            
+[2024-06-06T10:47:25.631Z][QUERY]: 
+            SELECT
+                `s`.*
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+            ) `s`
+            LEFT JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+            ) `rc`
+                ON
+                    `s`.`INDEX_NAME` = `rc`.`CONSTRAINT_NAME`
+                    AND
+                    `s`.`TABLE_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA`
+            WHERE
+                `s`.`INDEX_NAME` != 'PRIMARY'
+                AND
+                `rc`.`CONSTRAINT_NAME` IS NULL
+            
+[2024-06-06T10:47:25.631Z][QUERY]: 
+            SELECT
+                `kcu`.`TABLE_SCHEMA`,
+                `kcu`.`TABLE_NAME`,
+                `kcu`.`CONSTRAINT_NAME`,
+                `kcu`.`COLUMN_NAME`,
+                `kcu`.`REFERENCED_TABLE_SCHEMA`,
+                `kcu`.`REFERENCED_TABLE_NAME`,
+                `kcu`.`REFERENCED_COLUMN_NAME`,
+                `rc`.`DELETE_RULE` `ON_DELETE`,
+                `rc`.`UPDATE_RULE` `ON_UPDATE`
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tt_test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'users'
+            ) `kcu`
+            INNER JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tt_test'
+                    AND
+                    `TABLE_NAME` = 'users'
+            ) `rc`
+                ON
+                    `rc`.`CONSTRAINT_SCHEMA` = `kcu`.`CONSTRAINT_SCHEMA`
+                    AND
+                    `rc`.`TABLE_NAME` = `kcu`.`TABLE_NAME`
+                    AND
+                    `rc`.`CONSTRAINT_NAME` = `kcu`.`CONSTRAINT_NAME`
+            
+[2024-06-06T10:47:25.643Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:25.646Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'typeorm_metadata'
+[2024-06-06T10:47:27.705Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:27.730Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:47:27.736Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:27.737Z][QUERY]: START TRANSACTION
+[2024-06-06T10:47:27.738Z][QUERY]: ALTER TABLE `users` ADD `isActive` tinyint NOT NULL
+[2024-06-06T10:47:27.751Z][QUERY]: INSERT INTO `tt_test`.`migrations`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1717670842397,"Initial1717670842397"]
+[2024-06-06T10:47:27.754Z][QUERY]: COMMIT
+[2024-06-06T10:47:39.532Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:47:40.389Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:47:40.394Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:47:40.395Z]No migrations are pending
+[2024-06-06T10:57:26.302Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:57:26.332Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:57:26.337Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
+[2024-06-06T10:57:48.298Z][QUERY]: SELECT VERSION() AS `version`
+[2024-06-06T10:57:48.329Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tt_test' AND `TABLE_NAME` = 'migrations'
+[2024-06-06T10:57:48.334Z][QUERY]: SELECT * FROM `tt_test`.`migrations` `migrations` ORDER BY `id` DESC
